@@ -13,7 +13,7 @@ $(document).ready(function(){
         var navHeight;
         //establecer si el menú está dispuesto para pantallas max-width: 768px o no
         var responsiveMovil=$("#navbarNav").hasClass("show");
-        if(responsiveMovil){//evalua si nav tiene la clase "show"
+        if(responsiveMovil){//evalua si nav tiene la clase "show" lo que ocurre si ese está en pantallas de tablet o menos
             //altura de nav en movile
             // $("nav").animate({opacity: '0%'},{duration: 1000});
             navHeight=$("nav").height();
@@ -30,15 +30,18 @@ $(document).ready(function(){
         interval: 1500,
         ride: true,
         wrap:true
-      })
+      })//fin metodo carrusel
   //NAVBAR SOLIDA AL BAJAR
     $(window).scroll(function () {
-      console.log($(window).scrollTop());
+      //Ante el evento scroll, se valida si el usuario comienza a ver contenido bajo nav, que originalmente es transparente
+      // console.log($(window).scrollTop());
       if($(window).scrollTop()>100){
+        //Se cambia el atributo css de color de fondo al color de fondo asociado al proyecto en su versión mas trasparente
         $("#navB").css("background-color","#17a3b8a8");
       }else{
+        //al llegar a la parte superir de la pantalla, scrolltop menor que 100, vuelve a tener el atributo css de color de fondo al color de fondo transparente como se requiere
         $("#navB").css("background-color","transparent");
-      }
-    })
+      }//Fin del if scroll
+    })//Fin metodo scroll 
       
   })
