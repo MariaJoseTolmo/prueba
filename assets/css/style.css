@@ -40,8 +40,9 @@ nav{
 .ico i{
     color: white;
 }
+/* Se define el aspecto que determinaran las clases cuando la pantalla tenga como maximo ancho 768px Como referencia a las pantalllas de las tablets*/
 @media (max-width: 768px) {
-    .navbar-brand h2, #somos{
+    .navbar-brand h2, #somos, #asomos{
         display: none;
     }
     .footitle{
