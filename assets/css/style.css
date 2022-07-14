@@ -8,12 +8,12 @@ body{
     color: white;
     font-family: 'Open Sans', sans-serif;
 }
+/* Define una altura maxima para las imagenes dentro de cards para estandarizar */
 .card-img-top{
     max-height: 160px;
 }
-.card{
-    min-height: 360px ;
-}
+
+/* Color de fondo que se requiere para el nav */
 nav{
     background-color: transparent;
 }
@@ -21,19 +21,23 @@ nav{
     transition-property: all;
     transition-duration: 1s;
 }
+/* Disposición de inicio de todos los elementos de navbar */
 .navbar-brand *{
     display: inline-block;
 }
+/* Tamaño del logo en nav */
 .navbar-brand img{
     width: 30px;
     height: 30px;
 }
-.bgcolor{
+/* Color de fondo presente en varios elementos */
+.bgcolor{ 
     background-color: #17a3b8;
 }
-.minH{/*Permite que la altura de los elementos "card", sean iguales*/
- min-height: 410px;
+.minH{ /*Permite que la altura de los elementos "card", sean iguales*/
+    min-height: 410px;
 }
+/* Color de borde presente en varios elementos */
 .bordercolor{
     border-color: #17a3b8;
 }
@@ -42,16 +46,18 @@ nav{
 }
 /* Se define el aspecto que determinaran las clases cuando la pantalla tenga como maximo ancho 768px Como referencia a las pantalllas de las tablets*/
 @media (max-width: 768px) {
+    /* Se ocultará el texto de nav para privilegiar el logo */
+    /* Se oculata la seccion somos como se requiere */
+        /* Se oculta el elemento li contenedor de a que llevaría a la seccion somos */
     .navbar-brand h2, #somos, #asomos{
         display: none;
     }
+    /* Se ocultará el texto de nav para privilegiar los logos de rrss */
     .footitle{
         display: none !important;
     }
+    /* Sacar los magenes izquierdos favorece la distribución en footer */
     .fa-brands{
         margin-left: 0rem!important;
     }
-}
-@media (min-width: 769px) {
-
 }
