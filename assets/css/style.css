@@ -1,0 +1,56 @@
+html {
+    scroll-behavior: smooth !important;
+  }
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+.card-img-top{
+    max-height: 160px;
+}
+.card{
+    min-height: 360px ;
+}
+nav{
+    background-color: transparent;
+}
+#navbarNav, #navbarNav *{
+    transition-property: all;
+    transition-duration: 1s;
+}
+.navbar-brand *{
+    display: inline-block;
+}
+.navbar-brand img{
+    width: 30px;
+    height: 30px;
+}
+.bgcolor{
+    background-color: #17a3b8;
+}
+.minH{/*Permite que la altura de los elementos "card", sean iguales*/
+ min-height: 410px;
+}
+.bordercolor{
+    border-color: #17a3b8;
+}
+.ico i{
+    color: white;
+}
+@media (max-width: 768px) {
+    .navbar-brand h2, #somos{
+        display: none;
+    }
+    .footitle{
+        display: none !important;
+    }
+    .fa-brands{
+        margin-left: 0rem!important;
+    }
+}
+@media (min-width: 769px) {
+
+}
